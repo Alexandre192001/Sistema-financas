@@ -7,7 +7,7 @@ function Footer() {
     <footer className={style.container_footer}>
         <h1 className={style.title_footer}>Sistema de finanças</h1>
         <nav className={style.container_redes}>
-            <a href='https://frontend-alexandrejr.netlify.app/'>
+            <a href='https://portfolio-pessoal-alexandre.netlify.app/'>
                 <FaAddressCard/> Voltar para o portfólio
             </a>
             <a href='#header'>
