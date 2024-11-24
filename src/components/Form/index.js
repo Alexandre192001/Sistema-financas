@@ -6,9 +6,7 @@ const Form = ({ handleAdd, transactionsList, setTransactionsList }) => {
   const [desc, setDesc] = useState("");
   const [amount, setAmount] = useState("");
   const [isExpense, setExpense] = useState(false);
-
   const generateID = () => Math.round(Math.random() * 1000);
-
   const handleSave = () => {
     if (!desc || !amount) {
       alert("Informe a descrição e o valor!");
@@ -17,20 +15,15 @@ const Form = ({ handleAdd, transactionsList, setTransactionsList }) => {
       alert("O valor tem que ser positivo!");
       return;
     }
-
     const transaction = {
       id: generateID(),
       desc: desc,
       amount: amount,
-      expense: isExpense,
-    };
-
+      expense: isExpense,};
     handleAdd(transaction);
-
     setDesc("");
     setAmount("");
   };
-
   return (
     <>
       <C.Container>
